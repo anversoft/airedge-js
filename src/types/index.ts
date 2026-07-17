@@ -1,1 +1,1 @@
-export * as configuration from './configuration'
+export * as configuration from './airedge/v1/configuration'

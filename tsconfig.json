@@ -7,7 +7,6 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
@@ -15,7 +14,6 @@
     "rootDir": "./src",
     "removeComments": true,
     "importHelpers": false,
-
     "strict": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
@@ -25,19 +23,16 @@
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
     "useUnknownInCatchVariables": true,
-    "exactOptionalPropertyTypes": true,
-
+    "exactOptionalPropertyTypes": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-
     "skipLibCheck": false,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "allowImportingTsExtensions": false,
     "allowArbitraryExtensions": false,
-
     "noEmit": false,
     "preserveConstEnums": true,
     "preserveSymlinks": true

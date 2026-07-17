@@ -1,12 +1,13 @@
 import commonjs from '@rollup/plugin-commonjs'
+import json from '@rollup/plugin-json'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import terser from '@rollup/plugin-terser'
 import typescript from '@rollup/plugin-typescript'
 import { defineConfig } from 'rollup'
 import dts from 'rollup-plugin-dts'
 
-const external = id => !id.startsWith('.') && !id.startsWith('/') && !id.includes('src/')
-
+//const external = id => !id.startsWith('.') && !id.startsWith('/') && !id.includes('src/')
+const external = false
 export default defineConfig([
   // ESM and CJS builds
   {
@@ -26,6 +27,7 @@ export default defineConfig([
       },
     ],
     plugins: [
+      json(),
       nodeResolve({
         preferBuiltins: true,
       }),
@@ -47,6 +49,7 @@ export default defineConfig([
       sourcemap: true,
     },
     plugins: [
+      json(),
       nodeResolve({
         preferBuiltins: true,
       }),
